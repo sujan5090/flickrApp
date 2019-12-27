@@ -1,0 +1,12 @@
+.photos-container {
+    background-color: #f3f5f6;
+    display: flex;
+    flex-wrap: wrap;
+
+    .recent-image {
+        width: 400px;
+        height: 320px;
+        padding: 5px;
+        margin: 15px 40px;
+    }
+}

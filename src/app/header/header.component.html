@@ -1,0 +1,19 @@
+<div class="header">
+    <div class="search-field">
+        <i  class="fa fa-search search-icon" aria-hidden="true"></i>
+        <input class="search" 
+                type="text" 
+                placeholder="Photos, people, or groups" 
+                [(ngModel)]="searchTerm"
+                 (keyup)= "search($event)" />
+         <div class="suggestions" *ngIf="showSuggestions">
+            <div (click)="typeOfSearch('photos')">
+                Photos
+            </div>
+
+            <div (click)="typeOfSearch('groups')">
+                Groups
+            </div>
+        </div>
+    </div>
+</div>

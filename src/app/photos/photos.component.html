@@ -1,0 +1,6 @@
+<h2 class="m-3">Photos</h2>
+<div class="photos-container" *ngIf="photosData && photosData.length">
+    <div *ngFor="let photo of photosData">
+        <img class="recent-image" src="{{photo?.iconurls?.large}}" />
+    </div>
+</div>

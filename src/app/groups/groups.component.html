@@ -1,0 +1,19 @@
+<h2 class="m-3">Groups</h2>
+<div class="groups-container">
+    <div class="group" *ngFor="let item of groups">
+        <mat-card>
+            <div class="individual-group">
+                <span class="group-first" >
+                    <img class="avatar"  mat-card-avatar src="{{item.iconurls.default}}" alt="">
+                </span>
+                <span class="group-second">
+                    world
+                </span>
+                <span class="group-third">
+                    <button mat-button>Basic</button>
+                    <button mat-raised-button >Join</button>
+                </span>
+            </div>
+        </mat-card>
+</div>
+</div>

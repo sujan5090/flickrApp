@@ -1,0 +1,22 @@
+.groups-container{
+    background-color: #f3f5f6;
+    display: flex;
+    flex-wrap: wrap;
+    .group{
+        width: 30%;
+        background-color: white;
+        padding: 10px 25px 10px 0;
+        margin: 10px;
+        .individual-group{
+            display: flex;
+            justify-content: space-between;
+
+            .group-first{
+                img{
+                    width:100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
