@@ -23,7 +23,7 @@ export class GroupsComponent implements OnInit, OnDestroy {
       this.route.queryParams.subscribe(res => {
          if(res && res.searchKey){
             this.groupServiceSub = this.groupsService.getGroups(res.searchKey).subscribe(res => {
-                 console.log("the res is ", res.group);
+                  console.log("the res is ", res.group);
                  this.groups = res.group;
             });
             

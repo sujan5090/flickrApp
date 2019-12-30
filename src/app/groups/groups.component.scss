@@ -11,10 +11,25 @@
             display: flex;
             justify-content: space-between;
 
+            .main-group{
+                display: flex;
+                flex-direction: row;
+            }
+
             .group-first{
                 img{
                     width:100px;
                     height: 100px;
+                }
+            }
+            .group-second{
+                padding-left:15px;
+                div:first-child{
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+                div:nth-child(2){
+                    opacity: 0.6;
                 }
             }
         }
